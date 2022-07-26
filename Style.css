@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+   font-family: 'Roboto', sans-serif;
+   background-color: #101214;
+   color: #7A7C80;
+}
+html {
+   animation-delay: 0.2; 
+ }
+/* -------nav------- */
+
+.navbar{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row: 1;
+
+  display: grid;
+  text-align: center;
+  color: #e4e4e4;
+  padding-right: 1%;
+  padding-left: 1%;
+  padding-bottom: 1%;
+  background: #101214;
+  font-size: 1.8rem;
+}
+.navbar ul {
+   display: flex;
+   list-style: none;
+   width: 100%;
+   justify-content: center;
+ }
+ .navbar ul li {
+   margin: 0 1rem;
+ }
+.navbar ul li a {
+   text-decoration:none;
+   text-transform: uppercase;
+   color: #f4f4f4;
+ }
+ .navbar ul li a:hover {
+   color: skyblue;
+ }
+
+.symbol{
+   grid-column-start: 1;
+   grid-column-end: 2;
+   grid-row: 1;
+
+   padding-top: 20px;
+}
+.nav_text{
+   grid-column-start: 2;
+   grid-column-end: 3;
+   grid-row: 1;
+}
+.shortcuts{
+   grid-column-start: 3;
+   grid-column-end: 4;
+   grid-row: 1;
+}
+
+
+
+
+.container{
+
+   gap: 10px;
+   background:url("/img/wallpaper1.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+
+   display: grid;
+   grid-template:  45vh 50vh auto /repeat(3, 1fr);
+   box-sizing: border-box;
+}
+
+/* ------- img + intro ------- */
+
+.myimg{
+
+   
+   width: 70%;
+   max-height: 90%;
+
+  
+   grid-row-start: 1;
+   grid-row-end: span 2;
+   grid-column-start: 1;
+   grid-column-end: 3;
+   display: auto;
+   padding-left: 5%;
+}
+
+
+.welcome{
+
+   grid-row-start: 1;
+   grid-row-end: span 2;
+   grid-column-start: 2;
+   grid-column-end: 4;
+   padding-right: 10%;
+   padding-left: 30%;
+
+}
+.welcome div{
+   text-align: center;
+}
+.welcome h1{
+   font-size: 2.8rem;
+}
+
+
+
+/* -------grid part2------- */
+
+.about{  
+   grid-row-start: 3;
+   grid-column-start: 1;
+   grid-column-end: 2;
+}
+.about p{
+   padding-left: 5%;
+   font-size: 1.5rem;
+   margin:0;
+}
+.about ol{
+   font-size: 1.5rem;
+   padding-left: 9%;
+}
+
+
+
+.title1{
+   grid-row-start: 3;
+   grid-column-start: 1;
+   grid-column-end: 2;
+
+   color: #c3c7ce;
+   text-decoration: solid;
+   text-align: center;
+   font-size: 1.5rem;
+}
+
+.projects{  
+   grid-row-start: 3;
+   grid-column-start: 2;
+   grid-column-end: 4;
+   
+}
+
+.title2{
+   grid-row: 1;
+   grid-column-start: 2;
+   grid-column-end: 4;
+   text-align: center;
+   color: #c7cad1;
+   text-decoration: solid;
+   font-size: 1.8rem;
+}
+
+.proj-images ul  {
+   text-align: center;
+   padding: 0;
+}
+.proj-images ul li {
+   margin: 5%;
+   display: inline-block;
+   vertical-align: top;
+}
+.proj-images ul li img{
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+
+/* -------contact------- */
+
+.contact{
+   background: url("/img/wallpaper2.jpg");
+   height: 95vh;
+   background-size: cover;
+   background-repeat: no-repeat;
+   color: aquamarine;
+   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+   display: block;
+   width: 100%;
+   font-size: 1.8rem;
+   line-height: 2;
+   border: 1px solid rgb(19, 16, 16);
+}
+.contact,input {
+   padding: 1%;
+   width: 100%;
+}
+.form{
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  height: 40vh;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+}
+.name{
+   float: left;
+   padding-right: 3%;
+}  
+.email{
+   float: left;
+   padding-right: 3%;
+}
+.desc{
+   float: left;
+   padding-right: 3%;
+}
+.button{
+   background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.btn1{
+   background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+.btn1:hover {
+   background-color: #4CAF50;
+   color: white;
+}
+ 
+
+/* -------foot------- */
+.footer{
+   height: 30vh;
+   background: #101214;
+   overflow: hidden;
+   padding-top: 3%;
+   padding-left: 5%;
+   padding-right: 5%;
+   padding-bottom: 3%;
+   text-align:center;
+}
+.Right-footer{
+  border: 2px solid rgb(44, 35, 43);
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
